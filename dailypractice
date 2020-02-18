@@ -172,3 +172,22 @@ for i in range(3):
 print(sum)
 
 ================================
+
+
+/*-----------Reducing Dish---------*/
+l = [-1,3,-9,-7,6]
+l.sort()
+new =[]
+sum =0
+c1=0
+for ele in l:
+    if ele >= -1:
+        new.append(ele)
+n=0
+#print(new)
+for l in new:
+    n +=1
+    c1 = n*l
+    sum +=c1
+print(sum,new)
+
