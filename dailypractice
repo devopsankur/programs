@@ -173,7 +173,6 @@ print(sum)
 
 ================================
 
-
 /*-----------Reducing Dish---------*/
 l = [-1,3,-9,-7,6]
 l.sort()
@@ -191,3 +190,27 @@ for l in new:
     sum +=c1
 print(sum,new)
 
+===============================
+/*-----Mars Stone------*/
+# input1=10
+# input2=3
+# input3=[1,3,5]
+#o/p =2
+input1=14
+input2=4
+input3=[4,6,8,9]
+#o/p =4
+l =[]
+sum=0
+count=0
+for i in range(1,input1+1):
+   l.append(i)
+   for j in range(0,input2-1):
+       if l[i-1]==input3[j]:
+           l[i-1]=0
+for i in range(0,input1-1):
+    if sum<input1 and l[i]!=0:
+        sum =sum +l[i]
+        if sum<input1:
+            count+=1
+#print(count)
