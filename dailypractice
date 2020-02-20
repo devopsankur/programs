@@ -214,3 +214,36 @@ for i in range(0,input1-1):
         if sum<input1:
             count+=1
 #print(count)
+=============================
+/* Highest prime factors--*/
+def prime_factors(n):
+    prime_factor=1
+    i=2
+    while(i<=n//i):
+        if n%i==0:
+            prime_factor=i
+            n //=i
+        else:
+            i=i+1
+    if prime_factor <n:
+        prime_factor=n
+    return prime_factor
+n=5
+a=prime_factors(n)
+print(a)
+
+==================================
+/* Best Friend--*/
+b ='0111111111123'
+count=0
+for i in range(0,len(b)):
+    #print(b[i])
+    if (b[i]=='1'):
+        if((i+1<len(b)) and (i+2<len(b))):
+            if b[i+1]=='2' and b[i+2]=='3':
+                count +=1
+                i=i+2
+    #print(i)
+print(count)
+
+===================================
