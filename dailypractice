@@ -69,7 +69,7 @@ rep =0
 for i in range(len(l)):
     count =0
     for j in range(i,len(l)):
-        if l[i][1]==l[j][0]:
+        if l[i][1]<=l[j][0]:
             count +=1
         if count>=sum:
             sum =count
